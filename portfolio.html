@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--styleSheey-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -18,7 +20,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-
     <title>About</title>
 </head>
 
@@ -31,20 +32,19 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <!--Hold logo and nav-->
                 <div class="container">
-
                     <div class="float-left logo">
                         <a class="navbar-brand" href="index.html" id="myName">Gaofeng Su</a>
                     </div>
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
-                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse float-right" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">About</a>
+                                <a class="nav-link" href="index.html">About </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="portfolio.html">Portfolio </a>
@@ -59,30 +59,59 @@
             </nav>
         </header>
 
-        <!--main content-->
+        <!--Portfolio Picture-->
         <div class="container">
             <div class="main col">
                 <section>
-                    <h1>About Me</h1>
-                    <img id="profile" src="assets/images/profile.jpg" alt="profile" class="img-fluid">
-                    <p> My name is Gaofeng Su. I am a student from Chnina and I am currently attending the UC
-                        Berkeley coding boostcamp. I am not new to programming, I am famillar with c/c++, java, matlab etc, but I
-                        have no idea about web development and hence I want to learn something new in this filed.
-                        This is my first project/assigment for hteml/css practise. It seems very tricky at the very
-                        beginning but it is actually not very hard.
-                    </p>
+                    <h1>Protfolio</h1>
+                    <div id="galery_block" class="container">
+                        <div class="row justify-content-around">
+                            <div class="galery col-4 ">
+                                <img alt="Engineering" src="assets/images/g1.jpg" class="img-fluid">
+                                <a href="projects.html">Engineering/Coding Projects</a>
+                            </div>
 
+                            <div class="galery col-4">
+                                <img alt="Music" src="assets/images/g2.jpg" class="img-fluid">
+                                <a href="">Music</a>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-around">
+                            <div class="galery col-4">
+                                <img alt="Trips" src="assets/images/g3.jpg" class="img-fluid">
+                                <a href="">Trips</a>
+                            </div>
+
+                            <div class="galery col-4">
+                                <img alt="life" src="assets/images/g4.jpg" class="img-fluid">
+                                <a href="">Life</a>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-around">
+                            <div class="galery col-4">
+                                <img alt="Pets" src="assets/images/g5.jpg" class="img-fluid">
+                                <a href="">Pets</a>
+                            </div>
+
+                            <div class="galery col-4">
+                                <!--Empty block for column alignment-->
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
         </div>
-
     </div>
+
 
     <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
         <div class="container text-center">
             <small>Copyright &copy;</small>
         </div>
     </footer>
+
 
 </body>
 

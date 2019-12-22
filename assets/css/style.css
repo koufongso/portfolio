@@ -1,0 +1,170 @@
+.clearfix:after{
+    content:"";
+    clear: both;
+    display: block;
+}
+html,body{
+    height:100%;
+}
+body{
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    background-image:url(../images/background.png);
+    margin:0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper{
+    flex:1 0 auto;
+}
+
+/*-------------------Header------------------------------*/
+header{
+    background: #ffffff;
+    border-bottom: 1px solid #cccccc;
+}
+
+.logo{
+    
+    font-family: Georgia, Times, "Times New Roman", serif;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background: #4aaaa5;
+}
+
+#myName{
+    width: 7em;
+    font-size: 1.5em;
+    color: #ffffff;
+    text-align: center;
+}
+
+/*-------------------Main Content------------------------------*/
+.main{
+    border: #dddddd;
+    width:960px;
+    margin: 30px auto 30px auto;
+}
+
+.main{
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    padding:20px 50px 20px 50px;
+    overflow: auto;
+}
+
+ h1{
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+    border-bottom: 2px solid #cccccc;
+    padding-bottom:20px;
+}
+
+
+
+/*----------index.html-------*/
+#profile{
+    height: 200px;
+    width:auto;
+    float:left;
+    margin-right:20px;
+    margin-bottom:10px;
+}
+
+/*----------portfolio.html------*/
+#galery_block .galery{
+    float:left;
+    margin-right:30px;
+    margin-bottom:30px;
+    padding:0px;
+    position: relative;
+}
+
+#galery_block .galery img{
+    width: 100%;
+}
+
+#galery_block .galery a{
+    display: block;
+    background: #4aaaa5;
+    min-width:100%;
+    font-size: 1vw;
+    text-align: center;
+    color:#ffffff;
+    padding-top:0.2em;
+    padding-bottom:0.2em;
+    float:  left;
+    position: absolute;
+    bottom:0.5em;
+    text-decoration: none;
+}
+
+
+#galery_block .galery a:hover{
+    transition:1s;
+    background: black;
+}
+
+
+/*-----------contact.html------------*/
+#contact input{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#contact #submit_button{
+    background: #4aaaa5;
+    color: #ffffff;
+    width:100px;
+    border: 0px;;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+#contact #submit_button:hover{
+    transition:1s;
+    background: black;
+    cursor: pointer;
+}
+
+#contact #contact_message{
+    width:100%;
+    height: 200px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+/*-------------------Footer------------------------------*/
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+
+footer{
+    background: #666666;
+    color:#cccccc;
+    text-align: center;
+    border-top: 8px solid #4aaaa5;
+    width:100%;
+    height:20px;
+    padding-top:40px;
+    padding-bottom:10px;
+}
+
+
+
