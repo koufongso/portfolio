@@ -4,134 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--styleSheey-->
+    <!--styleSheet-->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-
-    <title>About</title>
+    <title>Portfolio</title>
 </head>
 
-<body class="d-flex flex-column">
-    <div id="page-content">
+<body>
+    <div class="wrapper">
+        <header>
 
-        <!--
-            <header class="sticky-top">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <div class="container">
+        </header>
 
-                        <div class="float-left logo">
-                            <a class="navbar-brand" href="index.html" id="myName">Gaofeng Su</a>
-                        </div>
-
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
-                            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="portfolio.html">Portfolio </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </nav>
-            </header>
-        -->
 
         <!--main content-->
-        <div class="container">
-            <div class="main col">
-                <div class="left_panel">
-                    <img id="profile" src="assets/images/profile.jpg" alt="profile" class="img-fluid">
-                    <div id="links">
-                        <a class="link" href="https://github.com/koufongso"><img
-                                src="assets/images/GitHub-Mark-32px.png"></a>
-                        <a class="link" href="https://www.linkedin.com/in/gaofeng-su"><img
-                                src="assets/images/LI-In-Bug.png" height="32px"></a>
+        <div class="main col-10">
+            <div class="left_panel col col-4">
+                <img id="profile" src="assets/images/profile.jpg" alt="profile" class="img-fluid">
+                <div>
+                    <div class="links-group">
+                        <!--GitHub-->
+                        <a class="link" href="https://github.com/koufongso" target="_blank">
+                            <img src="assets/images/GitHub-Mark-Light-32px.png" height="32px"></a>
+                        <!--Linkedin-->
+                        <a class="link" href="https://www.linkedin.com/in/gaofeng-su" target="_blank">
+                            <img src="assets/images/LI-In-Bug.png" height="32px"></a>
+                        <!--Gmail-->
+                        <a class="link" href="mailto:koufongso@gmail.com">
+                            <img src="assets/images/Gmail_Icon.svg" height="32px"></a>
+                    </div>
+                    <div class="links-group">
+                        <a class="link" href="/assets/pdf/Resume_Gaofeng_Su.pdf" target="_blank"><img
+                                src="assets/images/Crystal_Clear_mimetype_pdf.png" height="16px">
+                            <span style="color: white;">Resume</span></a>
                     </div>
 
+                    <div class="contact">
+                        <p style="color: white;">koufongso@gmail.com</p>
+                        <p style="color: white;">+1 510-356-7093</p>
+                    </div>
                 </div>
+            </div>
 
-                <div class="right_panel">
-                    <section>
-                        <h2> About Me</h2>
-                        <p> My name is Gaofeng Su, my journey to coding begining began with C, which I learned in an
-                            undergrad course, and Arduino (a programmable controller).During my studies, I used to code
-                            in
-                            Matlab, a computing environment and scripting language that is useful in mathmatic
-                            computation.
-                            Somethings I will do some coding in Python as well.</p>
+            <div class="right_panel col col-8">
+                <section>
+                    <h2> About Me</h2>
+                    <p> My name is Gaofeng Su. My journey to coding begining began with C, which I learned in an
+                        undergrad course, and Arduino (a programmable controller). During my studies, I used to code
+                        in
+                        Matlab, a computing environment and scripting language that is useful in mathematic
+                        computation.
+                        Sometimes I will do some coding in Python as well.</p>
 
-                        <p>
-                            I like coding and algorithms, and I am also interested in learning new things. Hence I also
-                            learned c++, java duirng my spare time, and joined a bootcamp to learn about web
-                            development.
-                        </p>
-                    </section>
-                    <br>
-                    <section>
-                        <h2>Coding Projects</h2>
-                        <h5>Html/Javascript</h5>
-                        <div class="project-html">
-                            <li><a href="https://koufongso.github.io/Word-Guess-Game/"
-                                    target="_blank">word-guess-game</a>
-                                <a href="https://github.com/koufongso/Word-Guess-Game" target="_blank"><img
-                                        class="link-project" src="assets/images/GitHub_Logo.png"></a></li>
-
-                            <li><a href="https://koufongso.github.io/unit-4-game/" target="_blank">mini RPG</a>
-                                <a href="https://github.com/koufongso/unit-4-game" target="_blank"><img
-                                        class="link-project" src="assets/images/GitHub_Logo.png"></a></li>
-
-                            <li><a href="https://koufongso.github.io/TriviaGame/" target="_blank">Trivia Game</a>
-                                <a href="https://github.com/koufongso/TriviaGame" target="_blank"><img
-                                        class="link-project" src="assets/images/GitHub_Logo.png"></a></li>
-
-                            <li><a href="https://koufongso.github.io/SearchMyTag/" target="_blank">SearchMyTag</a>
-                                <a href="https://github.com/koufongso/SearchMyTag" target="_blank"><img
-                                        class="link-project" src="assets/images/GitHub_Logo.png"></a></li>
-
-                            <li><a href="https://koufongso.github.io/RPS-Multiplayer/"
-                                    target="_blank">Rock,Paper,Scissors-Multiplayer</a>
-                                <a href="https://github.com/koufongso/RPS-Multiplayer" target="_blank"><img
-                                        class="link-project" src="assets/images/GitHub_Logo.png"></a></li>
-
-                            <li><a href="https://drler0.github.io/Unit8-Project1/" target="_blank">(Group Project) Recipe
-                                    Finder</a>
-                                <a href="https://github.com/drler0/Unit8-Project1" target="_blank"><img
-                                        class="link-project" src="assets/images/GitHub_Logo.png"></a></li>
-
+                    <p>
+                        I like coding and algorithms, and I am also interested in learning new things. Hence I also
+                        learned c++ and java duirng my spare time, and joined a bootcamp to learn about web
+                        development.
+                    </p>
+                </section>
+                <br>
+                <section>
+                    <div class="clearfix">
+                        <h2 style="float: left;">Coding Projects</h2>
+                        <div style="float: right;">
+                            <img src="assets/images/HTML5_Logo_64.png" height="32px">
+                            <img src="assets/images/css.png" height="32px">
+                            <img src="assets/images/JavaScript-logo.png" height="32px">
                         </div>
-                    </section>
-                </div>
-            </div>
+                    </div>
+                    <div>Html/CSS/Javascript</div>
+                    <div class="project-html">
+                        <li class="clearfix"><a href="https://koufongso.github.io/Word-Guess-Game/"
+                                target="_blank">word-guess-game</a>
+                            <a href="https://github.com/koufongso/Word-Guess-Game" target="_blank"></a><img
+                                    class="link-project" src="assets/images/GitHub_Logo.png"></a></li>
 
+                        <li class="clearfix"><a href="https://koufongso.github.io/unit-4-game/" target="_blank">mini
+                                RPG</a>
+                            <a href="https://github.com/koufongso/unit-4-game" target="_blank"><img class="link-project"
+                                    src="assets/images/GitHub_Logo.png"></a></li>
+
+                        <li class="clearfix"><a href="https://koufongso.github.io/TriviaGame/" target="_blank">Trivia
+                                Game</a>
+                            <a href="https://github.com/koufongso/TriviaGame" target="_blank"><img class="link-project"
+                                    src="assets/images/GitHub_Logo.png"></a></li>
+
+                        <li class="clearfix"><a href="https://koufongso.github.io/SearchMyTag/"
+                                target="_blank">SearchMyTag</a>
+                            <a href="https://github.com/koufongso/SearchMyTag" target="_blank"><img class="link-project"
+                                    src="assets/images/GitHub_Logo.png"></a></li>
+
+                        <li class="clearfix"><a href="https://koufongso.github.io/RPS-Multiplayer/"
+                                target="_blank">Rock,Paper,Scissors-Multiplayer</a>
+                            <a href="https://github.com/koufongso/RPS-Multiplayer" target="_blank"><img
+                                    class="link-project" src="assets/images/GitHub_Logo.png"></a></li>
+
+                        <li class="clearfix"><a href="https://drler0.github.io/Unit8-Project1/" target="_blank">(Group
+                                Project) Recipe
+                                Finder</a>
+                            <a href="https://github.com/drler0/Unit8-Project1" target="_blank"><img class="link-project"
+                                    src="assets/images/GitHub_Logo.png"></a></li>
+
+                    </div>
+                </section>
+            </div>
         </div>
+    </div>
 
-        <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
-            <div class="container text-center">
-                <small>Copyright &copy;</small>
-            </div>
-        </footer>
+    <footer>
+        <small id="copyright">Copyright &copy;</small>
+    </footer>
 
 </body>
 
