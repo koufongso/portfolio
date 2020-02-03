@@ -120,11 +120,6 @@ footer{
     bottom:10px;
 }
 
-.back-wh-tr{
-    background-color: whitesmoke;
-    opacity: .8;
-}
-
 .col{
     float: left;
     box-sizing: border-box;
