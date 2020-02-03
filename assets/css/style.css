@@ -58,7 +58,7 @@ body{
 #profile{
     height: 200px;
     width:200px;
-    margin:10px;
+    margin:10px auto;
     border-radius: 100px;
 }
 
@@ -100,6 +100,44 @@ a{
     float: right;
 }
 
+
+.overlay{
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+}
+
+
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.content{
+    width: 240px;
+    height: 180px;
+    background-color: whitesmoke;
+    opacity: 1;
+    border-radius: 20px;
+    padding:10px;
+    position: fixed;
+    z-index: 100;
+    left:50%;
+    top:50%;
+    margin-left: -120px;
+    margin-top:-90px;
+    text-align: center;
+}
+
+.content .close{
+    position: relative;
+    left:50px;
+    top:5px;
+    font-size:36px;
+    font-weight: bolder;
+}
+
+
 /*-------------------Footer------------------------------*/
 
 footer{
@@ -125,17 +163,79 @@ footer{
     box-sizing: border-box;
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+@media only screen and (max-width: 768px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    .main{
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .left_panel{
+        padding:5px;
+    }
+
+    .left_panel .links-group{
+        padding:0;
+    }
+    .left_panel .links-group a{
+        display: block;
+        margin:20px 0;
+    }
+
+    #profile{
+        width: 50px;
+        height: 50px;
+        display: block;
+    }
+
+    .projects-group-title .name, .projects-group-title .logo {  
+        float: none;
+        display: block;
+        position: static;
+    }
+
+    .projects-group-title .logo{
+        margin-top:10px;
+    }
+
+    .project-list{
+        padding-left:15px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
 
 

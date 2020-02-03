@@ -13,10 +13,10 @@
     <div class="wrapper">
         <!--main content-->
         <div class="clearfix">
-            <div class="main col-10 clearfix">
-                <div class="left_panel col col-4">
-                    <img id="profile" src="assets/images/profile.jpg" alt="profile" class="img-fluid">
-                    <div>
+            <div class="main col-10 col-s-12 clearfix">
+                <div class="left_panel col col-4 col-s-3">
+                    <img id="profile" src="assets/images/profile.jpg">
+                    <div class="col col-12 col-s-12">
                         <div class="links-group">
                             <!--GitHub-->
                             <a class="link" href="https://github.com/koufongso" target="_blank">
@@ -35,13 +35,14 @@
                         </div>
 
                         <div class="contact">
-                            <p style="color: white;">koufongso@gmail.com</p>
-                            <p style="color: white;">+1 510-356-7093</p>
+                            <a class="popup" href="#contact-info" style="color: white;">Contact Info</a>
                         </div>
+
                     </div>
                 </div>
 
                 <div class="right_panel col col-8">
+
                     <section>
                         <h2> About Me</h2>
                         <p> My name is Gaofeng Su. My journey to coding begining began with C, which I learned in an
@@ -117,6 +118,17 @@
     <footer>
         <small id="copyright">Copyright &copy;</small>
     </footer>
+
+
+    <!--popup name card-->
+    <div id="contact-info" class="overlay">
+        <div class="content">
+            <h3 style="display: inline-block;">My Contact</h3>
+            <a class="close" href="#" style="display: inline-block;">&times;</a>
+            <p>koufongso@gmail.com</p>
+            <p>+1 510-356-7093</p>
+        </div>
+    </div>
 
 </body>
 
