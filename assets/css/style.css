@@ -86,8 +86,18 @@ li:hover{
 }
 
 a{
-    text-decoration: none;
-    
+    text-decoration: none;   
+}
+
+.projects-group-title .name{
+    margin: 0;
+    float: left;
+    position: relative;
+    top: 10px;
+}
+
+.projects-group-title .logo{
+    float: right;
 }
 
 /*-------------------Footer------------------------------*/
